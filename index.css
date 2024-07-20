@@ -5,8 +5,14 @@
     
 }
 
+
+
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
+}
+body{
+    background-color:floralwhite;
+    
 }
 
 nav{
@@ -61,7 +67,7 @@ a{
     justify-content: center;
     align-items: center;
     padding:30px 30px;
-    margin: 20px;
+    margin: 2s0px;
 
     
 }
@@ -82,24 +88,30 @@ a{
     padding:50px 30px;
     text-align: center;
     background-color: #405d72 ;
-    color: #fff;
+    color:white;
     border-radius: 60px;
-    width: 95%;
+    width: 80%;
     margin: auto;
+    padding: 20px 20px;
     
+    
+}
+.hero p{
+    margin: 20px;
+    text-align: center;
 }
 
 .skills{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding:10px 30px;
-    
+    padding:10px 40px;
+
 }
 
 .sub-skills{
 align-items: center;
-padding: 60px 30px;
+padding: 10px 40px;
 
 
 }
@@ -121,15 +133,15 @@ padding: 60px 30px;
    cursor: pointer; */
 
 
-.contact-section{
+.contact-section.group{
     padding:50px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
     flex-direction:column;
     justify-content: center;
     /* background-color: #405d72; */
-    height:fit-content;
+    /* height:fit-content; */
 }
 form{
     padding: 70px 60px;
@@ -140,23 +152,37 @@ form{
     border-radius: 16px;
     border: #405d72;
     font-size: 20px;
-    margin: 60px;
+    margin:0;
     border-radius: 20px;
+    /* margin-top:0; */
 
 }
+input, textarea ,label {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+    margin: auto;
+    margin-top:none;
+}
+.contact-section{
+
+}
+
 .contact-section h2{
-    font-size: 35px;
+    font-size: 30px;
     display: flex;
     text-align: center;
     justify-content: center;
     color:black;
-
-    
+    margin-bottom:none;
 }
+
 .contact-section .group{
    display: flex;
    gap: 50px;
    justify-content: center;
+   margin-top: 0;
 }
 .group  button:hover {
     background-color: black;
@@ -170,61 +196,78 @@ span{
 
 .Download{
     align-items: center;
-    margin: 20px;
+    margin:20px;
     padding: 16px; 
     display: flex;
     justify-content: center;
+    padding-bottom:20px;
 
 }
-#submit{
-    align-items: center;
-    margin: 20px;
-    padding: 16px; 
+.contact-section button{
     display: flex;
+    padding: 16px;
+    text-align: center;
+    margin:auto;
     justify-content: center;
+    width: 50%;
+    margin-top: 16px;
 
 }
 
 
-.social {
+.social a  {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding:10px 30px;
-    font-size: 10px;
-    width: 100%;
-    margin: auto;
+    /* padding:10px 30px; */
+    font-size: 2px;
+    /* width: 100%; */
+    margin: left 50px;
+    margin-right: 50px;
     /* height: fit-content; */
-    justify-content: space-between;
+    /* justify-content:space-around; */
 
+}
+.links{
+    background-color: #405d72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    font-size:50px;
+}
+.links img{
+    font-size:2px;
 }
 .social h3{
  display: flex;
  justify-content: center;
+ align-items: center;
+ margin-bottom: 16px;
+ 
 
 }
-@media(max-width:736px){
+@media(max-width:768px){
     .nav{
-        flex-direction: column;
-    }
-    .sign .form{
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-    .form .image{
-        border-radius: 0;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-        order: 2;
-    }
-    .content{
-        order: 1;
-        border-radius: 0;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-    .images{
-        display: none;
-    }
+    display: none;
+    
+}
+.hero {
+    font-size: 20px;
+
+}
+.hero p{
+    font-size: 0 16px;
+    margin: 7px;
+
+}
+.contact-section{
+    padding:10px 0;
+}
+.links{
+    font-size:7px ;
+
+    
 }
 
+}
