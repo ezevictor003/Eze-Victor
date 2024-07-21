@@ -134,7 +134,7 @@ padding: 10px 40px;
 
 
 .contact-section.group{
-    padding:50px;
+    /* padding:50px; */
     /* margin-bottom: 100px; */
     width: 100%;
     /* margin: auto; */
@@ -144,8 +144,7 @@ padding: 10px 40px;
     /* height:fit-content; */
 }
 form{
-    padding: 70px 60px;
-    margin: 16px 16px;
+    /* padding: 70px 60px; */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -153,7 +152,7 @@ form{
     border: #405d72;
     font-size: 20px;
     margin:0;
-    border-radius: 20px;
+    border-radius: 10px;
     /* margin-top:0; */
 
 }
@@ -215,29 +214,32 @@ span{
 }
 
 
+.social{
+    width: 100%;
+}
+
 .social a  {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* padding:10px 30px; */
-    font-size: 2px;
-    /* width: 100%; */
-    margin: left 50px;
-    margin-right: 50px;
-    /* height: fit-content; */
-    /* justify-content:space-around; */
-
+filter: invert(1);
+    width: 10px;
+   
+    
 }
 .links{
     background-color: #405d72;
     display: flex;
+    width: 100% !important;
+    /* gap: 1rem; */
     align-items: center;
     justify-content: center;
-    padding: auto;
-    font-size:50px;
+    
 }
-.links img{
-    font-size:2px;
+
+
+.links li a {
+  margin: 0 20px;
 }
 .social h3{
  display: flex;
@@ -248,26 +250,47 @@ span{
 
 }
 @media(max-width:768px){
-    .nav{
-    display: none;
+   
+nav ul{
+    display:none
+}
+
+.my-image{
+    width: 200px;
+    height: 200px;
+
+}
+
+.introduction{
+   flex-direction: column;
+
     
+}
+
+.skills{
+    flex-direction: column;
+    padding:  30px;
+    margin:0 20px;
+    padding: 0 3opx;
+}
+
+.contact-section.group{
+    padding:0;
+    
+}
+form {
+    padding:0;
 }
 .hero {
-    font-size: 20px;
+    font-size: 16px;
+    padding: 0;
+    padding: 20px 0;
+    /* text-align: justify; */
 
 }
-.hero p{
-    font-size: 0 16px;
-    margin: 7px;
 
-}
 .contact-section{
-    padding:10px 0;
-}
-.links{
-    font-size:7px ;
-
-    
+    /* padding:10px 0; */
 }
 
 }
